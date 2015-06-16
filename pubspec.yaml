@@ -1,0 +1,33 @@
+name: dasic
+description: >
+  A library useful for applications or for sharing on pub.dartlang.org.
+
+author: Mike Mitterer <office@mikemitterer.at>
+
+version: 0.0.1
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+# Add the bin/dasic.dart script to the scripts pub installs.
+# Activate local repo:
+#   pub global activate --source path .
+#
+executables:
+  dasic:
+
+dependencies:
+  browser: any
+
+  logging: any
+  logging_handlers: any
+  console_log_handler: any
+
+  validate: any
+
+  args: any
+  path: any
+  yaml: any
+
+dev_dependencies:
+  unittest: any
