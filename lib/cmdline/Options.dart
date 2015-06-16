@@ -1,4 +1,4 @@
-part of dasic;
+part of dasic.cmdline;
 
 /// Commandline options
 class Options {

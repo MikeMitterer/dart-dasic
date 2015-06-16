@@ -4,7 +4,7 @@
 /// The dasic library.
 ///
 /// This is an awesome library. More dartdocs go here.
-library dasic;
+library dasic.cmdline;
 
 import 'dart:io';
 import 'dart:async';

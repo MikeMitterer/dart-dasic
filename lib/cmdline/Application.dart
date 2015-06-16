@@ -1,7 +1,7 @@
-part of dasic;
+part of dasic.cmdline;
 
 class Application {
-    final Logger _logger = new Logger("dasic.Application");
+    final Logger _logger = new Logger("dasic.cmdline.Application");
 
     /// Commandline options
     final Options options;

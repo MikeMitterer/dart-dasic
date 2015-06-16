@@ -1,11 +1,11 @@
-part of dasic;
+part of dadasic.cmdlinesic;
 
 /**
  * Defines default-configurations.
  * Most of these configs can be overwritten by commandline args.
  */
 class Config {
-    final Logger _logger = new Logger("dasic.Config");
+    final Logger _logger = new Logger("dasic.cmdline.Config");
 
     static const String _CONFIG_FOLDER     = ".dasic";
 
