@@ -4,25 +4,16 @@
 /// The dasic library.
 ///
 /// This is an awesome library. More dartdocs go here.
-library dasic.cmdline;
+library dasic;
 
 import 'dart:io';
-import 'dart:async';
-import 'dart:collection';
-import 'dart:convert';
-import 'dart:math';
 
 import 'package:logging/logging.dart';
 import 'package:logging_handlers/logging_handlers_shared.dart';
 
 import 'package:validate/validate.dart';
-import "package:yaml/yaml.dart" as yaml;
 
-import 'package:intl/intl.dart';
-import 'package:args/args.dart';
+part "src/Token.dart";
+part "src/Lexer.dart";
 
-import 'package:dasic/dasic.dart';
-
-part "cmdline/Application.dart";
-part "cmdline/Config.dart";
-part "cmdline/Options.dart";
+part "src/Utils.dart";

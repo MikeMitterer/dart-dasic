@@ -26,7 +26,7 @@ class Config {
 
     String get loglevel => _settings[Options._ARG_LOGLEVEL];
 
-    List<String> get dirstoscan => _argResults.rest;
+    List<String> get filestoscan => _argResults.rest;
 
     Map<String,String> get settings {
         final Map<String,String> settings = new Map<String,String>();
@@ -37,8 +37,8 @@ class Config {
         settings["Config file"]                             = configfile;
 
 
-        if(dirstoscan.length > 0) {
-            settings["Dirs to scan"]                        = dirstoscan.join(", ");
+        if(filestoscan.length > 0) {
+            settings["Files to scan"]                        = filestoscan.join(", ");
         }
 
         return settings;

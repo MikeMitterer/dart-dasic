@@ -30,4 +30,4 @@ dependencies:
   yaml: any
 
 dev_dependencies:
-  unittest: any
+  test: any
