@@ -21,6 +21,6 @@ import "package:yaml/yaml.dart" as yaml;
 import 'package:intl/intl.dart';
 import 'package:args/args.dart';
 
-part "src/Application.dart";
-part "src/Config.dart";
-part "src/Options.dart";
+part "cmdline/Application.dart";
+part "cmdline/Config.dart";
+part "cmdline/Options.dart";
