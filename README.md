@@ -1,15 +1,15 @@
 # Dasic - Dart BASIC interpreter
 
-Dasic is a complete standalone
+**Dasic** is a complete standalone
 interpreter for a dialect of the original BASIC language. It handles tokenizing, parsing, interpreting, output,
 variables, expressions, and flow control, like a full-scale compiler or
 interpreter, just in miniature. I tried to keep the code simple and readable
-while still being terse.
+while still being short and readable.
 
-If you've ever wanted a gentle introduction to how programming languages work
+If you've ever wanted a gentle introduction to how a programming languages work
 under the hood, Dasic is a good place to start.
 
-# Sample
+## Sample
 Result of `dasic packages/dasic/scripts/mandel.das`
 
 ```shell
@@ -41,8 +41,8 @@ Result of `dasic packages/dasic/scripts/mandel.das`
                                              -------=+--------
 ```
 
-# Install
-If you don't have Dart on your machine - Download and install it from [here][installdart]
+## Install
+If you don't have **Dart** on your machine - Download and install it from [here][installdart]
 
 Install Dasic
 ```shell
@@ -70,7 +70,7 @@ Try
     dasic packages/dasic/scripts/mandel.das
 ```
 
-## More Info
+### More Info
 
 The real information about Dasic, including the language syntax and how the
 interpreter works is all in with the code, so go ahead and read through
@@ -78,15 +78,15 @@ Dasi.
 
 If you have any questions, feel free to get in touch. Cheers!
 
-### Features and bugs
+#### Features and bugs
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-### Thanks
+#### Thanks
 I want to thank "Bob Nystrom" for his base-work "JASIC"! You can read more from Bob and 
 about "A Complete Interpreter in One Java File" [here][bob] on his Blog.  
 Java-Version of Dasic is [Jasic][jasic] 
 
-### License
+#### License
 
     Copyright 2015 Michael Mitterer (office@mikemitterer.at),
     IT-Consulting and Development Limited, Austrian Branch

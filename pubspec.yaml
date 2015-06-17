@@ -1,7 +1,5 @@
 name: dasic
-description: >
-  A library useful for applications or for sharing on pub.dartlang.org.
-
+description: Dasic is a complete standalone interpreter for a dialect of the original BASIC language.
 author: Mike Mitterer <office@mikemitterer.at>
 
 version: 0.0.1
@@ -26,7 +24,6 @@ dependencies:
   validate: any
 
   args: any
-  path: any
   yaml: any
 
 dev_dependencies:
