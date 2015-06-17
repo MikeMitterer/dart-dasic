@@ -1,5 +1,15 @@
 part of dasic.cmdline;
 
+/**
+ * Port JASIC to Dart
+ * WebSite:
+ *      https://github.com/munificent/jasic
+ *      http://goo.gl/m1FOD6
+ *
+ * Expression parser:
+ *      http://epaperpress.com/oper/prac2.html
+ *      http://www.technical-recipes.com/2011/a-mathematical-expression-parser-in-java-and-cpp/
+ */
 class Application {
     final Logger _logger = new Logger("dasic.cmdline.Application");
 
@@ -55,27 +65,16 @@ class Application {
     }
 
     // -- private -------------------------------------------------------------
+
     void _interpretFile(final File file) {
         Validate.notNull(file);
         Validate.isTrue(file.existsSync());
 
-        _logger.info("File: ${file.path}");
+        _logger.fine("File: ${file.path}");
 
         final String content = file.readAsStringSync();
-        final Lexer lexer = new Lexer();
-
-        final List<Token> tokens = lexer.lex(content);
-        tokens.forEach((final Token token) {
-            switch(token.type) {
-                case TokenType.LINE:
-                    _logger.info("${token.type.toString().padRight(18)} -> <nl>");
-                    break;
-
-                default:
-                    _logger.info("${token.type.toString().padRight(18)} -> Text: ${token.text}");
-                    break;
-            }
-        });
+        final Interpreter interpreter = new Interpreter();
+        interpreter.interpret(content);
     }
 
     void _configLogging(final String loglevel) {

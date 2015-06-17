@@ -6,7 +6,7 @@ class Lexer {
      * a sequence of tokens. Each token is a meaningful unit of program, like a
      * variable name, a number, a string, or an operator.
      */
-    List<Token> lex(final String source) {
+    List<Token> scan(final String source) {
         final List<Token> tokens = new List<Token>();
 
         // Many tokens are a single character, like operators and ().

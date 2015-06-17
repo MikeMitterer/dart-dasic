@@ -9,11 +9,15 @@ library dasic;
 import 'dart:io';
 
 import 'package:logging/logging.dart';
-import 'package:logging_handlers/logging_handlers_shared.dart';
-
 import 'package:validate/validate.dart';
 
+part "src/Value.dart";
 part "src/Token.dart";
+part "src/Expression.dart";
+part "src/Statement.dart";
+
 part "src/Lexer.dart";
+part "src/Parser.dart";
+part "src/Interpreter.dart";
 
 part "src/Utils.dart";
