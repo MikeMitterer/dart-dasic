@@ -1,6 +1,7 @@
 name: dasic
 description: Dasic is a complete standalone interpreter for a dialect of the original BASIC language.
 author: Mike Mitterer <office@mikemitterer.at>
+homepage: https://github.com/MikeMitterer/dart-dasic
 
 version: 1.0.0
 
