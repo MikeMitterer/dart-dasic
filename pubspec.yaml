@@ -2,7 +2,7 @@ name: dasic
 description: Dasic is a complete standalone interpreter for a dialect of the original BASIC language.
 author: Mike Mitterer <office@mikemitterer.at>
 
-version: 0.0.1
+version: 1.0.0
 
 environment:
   sdk: '>=1.0.0 <2.0.0'
