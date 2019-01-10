@@ -25,8 +25,8 @@ part of dasic;
  * and operated on.
  *
  * There is an implementation of this interface for each of the different
- * primitive types (really just double and string) that Jasic supports.
- * Wrapping them in a single Value interface lets Jasic be dynamically-typed
+ * primitive types (really just double and string) that Dasic supports.
+ * Wrapping them in a single Value interface lets Dasic be dynamically-typed
  * and convert between different representations as needed.
  *
  * Note that Value extends Expression. This is a bit of a hack, but it lets
@@ -49,7 +49,7 @@ abstract class Value extends Expression {
 }
 
 /**
- * A numeric value. Jasic uses doubles internally for all numbers.
+ * A numeric value. Dasic uses doubles internally for all numbers.
  */
 class NumberValue implements Value {
     final double value;

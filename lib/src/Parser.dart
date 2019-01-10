@@ -20,7 +20,7 @@
 part of dasic;
 
 /**
- * This defines the Jasic parser. The parser takes in a sequence of tokens
+ * This defines the Dasic parser. The parser takes in a sequence of tokens
  * and generates an abstract syntax tree. This is the nested data structure
  * that represents the series of statements, and the expressions (which can
  * nest arbitrarily deeply) that they evaluate. In technical terms, what we
@@ -99,7 +99,7 @@ class Parser {
 
     /**
      * Parses a single expression. Recursive descent parsers start with the
-     * lowest-precedent term and moves towards higher precedence. For Jasic,
+     * lowest-precedent term and moves towards higher precedence. For Dasic,
      * binary operators (+, -, etc.) are the lowest.
      *
      * @return The parsed expression.
@@ -110,7 +110,7 @@ class Parser {
 
     /**
      * Parses a series of binary operator expressions into a single
-     * expression. In Jasic, all operators have the same precedence and
+     * expression. In Dasic, all operators have the same precedence and
      * associate left-to-right. That means it will interpret:
      *    1 + 2 * 3 - 4 / 5
      * like:

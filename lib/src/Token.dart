@@ -26,7 +26,7 @@ part of dasic;
  *
  * HACK: A typical tokenizer would actually have unique token types for
  * each keyword (print, goto, etc.) so that the parser doesn't have to look
- * at the names, but Jasic is a little more crude.
+ * at the names, but Dasic is a little more crude.
  */
 enum TokenType {
     WORD, NUMBER, STRING, LABEL, LINE,

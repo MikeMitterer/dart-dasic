@@ -20,12 +20,12 @@
 import 'package:test/test.dart';
 
 import 'package:dasic/dasic.dart';
-import 'package:logging/logging.dart';
-import 'package:logging_handlers/logging_handlers_shared.dart';
+// import 'package:logging/logging.dart';
+// import 'package:console_log_handler/print_log_handler.dart';
 
 main() {
-    //final Logger _logger = new Logger("test.Utils");
-    configLogging();
+    // final Logger _logger = new Logger("test.Utils");
+    // configLogging();
 
     group('Utils', () {
         setUp(() { });
@@ -85,11 +85,3 @@ main() {
     // end 'Utils' group
 }
 
-void configLogging() {
-    hierarchicalLoggingEnabled = true;
-
-    // now control the logging.
-    // Turn off all logging first
-    Logger.root.level = Level.INFO;
-    Logger.root.onRecord.listen(new LogPrintHandler(messageFormat: "%n: (%t) %m"));
-}

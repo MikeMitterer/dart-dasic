@@ -32,7 +32,7 @@ part of dasic;
 /**
  * Base interface for an expression. An expression is like a statement
  * except that it also returns a value when executed. Expressions do not
- * appear at the top level in Jasic programs, but are used in many
+ * appear at the top level in Dasic programs, but are used in many
  * statements. For example, the value printed by a "print" statement is an
  * expression. Unlike statements, expressions can nest.
  */

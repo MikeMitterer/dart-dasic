@@ -26,7 +26,7 @@ import 'dart:math';
 import "package:yaml/yaml.dart" as yaml;
 import 'package:args/args.dart';
 import 'package:logging/logging.dart';
-import 'package:logging_handlers/logging_handlers_shared.dart';
+import 'package:console_log_handler/print_log_handler.dart';
 import 'package:validate/validate.dart';
 
 import 'package:dasic/dasic.dart';

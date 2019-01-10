@@ -30,7 +30,7 @@ part of dasic;
 */
 
 /**
- * Base interface for a Jasic statement. The different supported statement
+ * Base interface for a Dasic statement. The different supported statement
  * types like "print" and "goto" implement this.
  */
 abstract class Statement {
